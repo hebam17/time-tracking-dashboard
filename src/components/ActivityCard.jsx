@@ -3,7 +3,7 @@ export default function ActivityCard({ activity, timeframe }) {
   const data = timeframes[timeframe];
 
   return (
-    <div className="card">
+    <div className={`card ${activity.title.toLowerCase().replace(" ", "-")}`}>
       <div className="card-inner">
         {/* THE CARD HEAD START */}
         <div className="card-head">
@@ -16,8 +16,14 @@ export default function ActivityCard({ activity, timeframe }) {
 
         {/* THE CARD BODY START */}
         <div className="card-body">
-          <div className="current">{data.current}</div>
-          <div className="previous">{data.previous}</div>
+          <div className="current">{data.current}hrs</div>
+          <div className="previous">
+            Last{" "}
+            {timeframe === "daily"
+              ? "Day"
+              : timeframe[0].toUpperCase() + timeframe.slice(1, -2)}{" "}
+            - {data.previous}hrs
+          </div>
         </div>
         {/* THE CARD BODY END */}
       </div>

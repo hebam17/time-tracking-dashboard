@@ -28,7 +28,7 @@ function App() {
         <div className="timeframe">
           {timeframeList.map((item) => (
             <div
-              className={`${item === timeframe ? "active" : ""} ${item}`}
+              className={`${item === timeframe ? "active" : ""}`}
               onClick={() => timeframeChange(item)}
               key={item}
             >

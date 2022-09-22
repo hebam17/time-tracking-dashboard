@@ -3,7 +3,7 @@ import ActivityCard from "./ActivityCard";
 
 export default function ActivityCards({ data, timeframe }) {
   return (
-    <div>
+    <div className="activity-cards">
       {data.map((activity) => (
         <ActivityCard
           activity={activity}
