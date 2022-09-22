@@ -65,19 +65,13 @@ main {
   margin: 5rem auto;
   display: grid;
   grid-template-columns: 1fr;
-  // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1.5rem;
-
   grid-auto-rows: auto;
-  // margin: 0 auto;
 
   @media screen and (max-width: 320px) {
     width: 95vw;
   }
 
-  // @media screen and (min-width: 481px) {
-
-  // }
   @media screen and (min-width: 769px) {
     grid-template-columns: 1fr 3fr;
     grid-gap: 2rem;
@@ -100,15 +94,7 @@ main {
   @media screen and (min-width: 481px) {
     justify-content: left;
   }
-  // max-width: 200px;
 
-  // @media screen and (min-width: 481px) {
-  //   max-width: 250px;
-  // }
-
-  // @media screen and (min-width: 769px) {
-  //   max-width: 300px;
-  // }
   @media screen and (min-width: 1200px) {
     min-width: 280px;
   }
@@ -143,7 +129,6 @@ main {
       height: 4rem;
       border-radius: 50%;
       outline: 0.2rem white solid;
-      // margin-right: 1.2rem;
 
       @media screen and (min-width: 481px) {
         margin: 0 0 2rem 0;
@@ -217,19 +202,19 @@ main {
     font-weight: $font-weight2;
     color: $desaturated-blue;
 
-    // @media screen and (max-width: 480px) {
-
-    // }
     @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
     }
 
     @media screen and (min-width: 769px) {
+      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: left !important;
-      align-items: space-between;
+      justify-content: space-evenly !important;
+      align-content: left !important;
       text-align: left;
       padding: 2rem 1.8rem;
     }
@@ -268,24 +253,15 @@ main {
 
 .activity-cards {
   width: 100%;
-  // display: flex;
-  // justify-content: space-between;
-  // flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: auto;
   grid-gap: 1.5rem;
-  // column-gap: 0;
-  // margin: 0;
 
   .card {
-    // border: solid white 1px;
     padding-top: 2rem;
-    // overflow: hidden;
     border-radius: $card-border-radius * 1.5;
-    // width: 200px;
     margin: 0;
-    // gap: 0;
 
     @media screen and (min-width: 481px) {
       padding-top: 3rem;
@@ -335,13 +311,10 @@ main {
   }
 
   .card-inner {
-    // margin: 4rem 0 0 0;
     margin: 0;
-
     background: $dark-blue;
     width: 100%;
     height: 100%;
-    // border: solid red 5px;
     border-radius: $card-border-radius * 1.5;
     padding: 1.5rem;
 
