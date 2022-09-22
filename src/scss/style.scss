@@ -90,7 +90,7 @@ main {
   background: $dark-blue;
   margin: 0;
   border-radius: $card-border-radius;
-  max-height: 100vh;
+  max-height: 150vh;
 
   @media screen and (min-width: 481px) {
     justify-content: left;
@@ -215,7 +215,6 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly !important;
-      align-content: left !important;
       text-align: left;
       padding: 2rem 1.8rem;
     }
