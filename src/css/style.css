@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background: hsl(226deg, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 481px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 90%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+  grid-auto-rows: auto;
+}
+@media screen and (max-width: 320px) {
+  main {
+    width: 95vw;
+  }
+}
+@media screen and (min-width: 769px) {
+  main {
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem;
+    width: 80vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  main {
+    width: 75vw;
+    grid-gap: 4rem;
+  }
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  background: hsl(235deg, 46%, 20%);
+  margin: 0;
+  border-radius: 1rem;
+  max-height: 150vh;
+}
+@media screen and (min-width: 481px) {
+  .main-card {
+    justify-content: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-card {
+    min-width: 250px;
+  }
+}
+.main-card .personal-info {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.8rem 1.6rem;
+  border-radius: 1rem;
+  background: hsl(246deg, 80%, 60%);
+  width: 100%;
+  margin: 0;
+}
+@media screen and (min-width: 481px) {
+  .main-card .personal-info {
+    padding: 2rem 1.8rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main-card .personal-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-card .personal-info {
+    padding: 2.2rem 2.5rem 2.2rem 2rem;
+  }
+}
+.main-card .personal-info .image {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  outline: 0.2rem white solid;
+}
+@media screen and (min-width: 481px) {
+  .main-card .personal-info .image {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0 2rem 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main-card .personal-info .image {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+.main-card .personal-info .image img {
+  width: 100%;
+  height: 100%;
+}
+.main-card .personal-info .title {
+  display: flex;
+  flex-direction: column;
+}
+.main-card .personal-info .title .side-title {
+  color: rgb(199, 195, 195);
+  font-size: 18px;
+  font-weight: 300;
+}
+@media screen and (max-width: 320px) {
+  .main-card .personal-info .title .side-title {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main-card .personal-info .title .side-title {
+    font-size: 1.4rem;
+  }
+}
+.main-card .personal-info .title h1 {
+  font-size: 21.6px;
+  color: #f5f5f5;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+@media screen and (max-width: 320px) {
+  .main-card .personal-info .title h1 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-card .personal-info .title h1 {
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 481px) {
+  .main-card .personal-info .title h1 {
+    white-space: normal;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main-card .personal-info .title h1 {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .main-card .personal-info .title h1 {
+    font-size: 2.38rem;
+  }
+}
+.main-card .timeframe {
+  width: 100%;
+  margin: 0;
+  padding: 1.8rem 1.6rem;
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(235deg, 45%, 61%);
+}
+@media screen and (max-width: 768px) {
+  .main-card .timeframe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main-card .timeframe {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    text-align: left;
+    padding: 2rem 1.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-card .timeframe {
+    padding: 2.2rem 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-card .timeframe div {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main-card .timeframe div:not(:first-child) {
+    margin-top: 1.5rem !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main-card .timeframe div {
+    font-size: 1.5rem;
+  }
+}
+.main-card .timeframe div:hover {
+  color: #f5f5f5;
+  cursor: pointer;
+}
+.main-card .timeframe .active {
+  color: #f5f5f5;
+}
+
+.activity-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1.5rem;
+}
+.activity-cards .card {
+  padding-top: 2rem;
+  border-radius: 1.5rem;
+  margin: 0;
+}
+@media screen and (min-width: 481px) {
+  .activity-cards .card {
+    padding-top: 3rem;
+  }
+}
+.activity-cards .work {
+  background: hsl(15deg, 100%, 70%);
+  background-image: url("/assets/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: 88% -5%;
+}
+.activity-cards .play {
+  background: hsl(195deg, 74%, 62%);
+  background-image: url("/assets/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: 88% -5%;
+}
+.activity-cards .study {
+  background: hsl(348deg, 100%, 68%);
+  background-image: url("/assets/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: 88% -5%;
+}
+.activity-cards .exercise {
+  background: hsl(145deg, 58%, 55%);
+  background-image: url("/assets/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: 88% 2%;
+}
+.activity-cards .social {
+  background: hsl(264deg, 64%, 52%);
+  background-image: url("/assets/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: 90% -5%;
+}
+.activity-cards .self-care {
+  background: hsl(43deg, 84%, 65%);
+  background-image: url("/assets/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: 88% -5%;
+}
+.activity-cards .card-inner {
+  margin: 0;
+  background: hsl(235deg, 46%, 20%);
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+.activity-cards .card-inner:hover {
+  background: rgb(52, 57, 123);
+  cursor: pointer;
+}
+@media screen and (min-width: 481px) {
+  .activity-cards .card-inner {
+    padding: 2rem;
+  }
+}
+.activity-cards .card-inner .card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.activity-cards .card-inner .card-head .head-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #f5f5f5;
+}
+.activity-cards .card-inner .card-head .head-icon img {
+  transition: all 0.3s ease;
+}
+.activity-cards .card-inner .card-head .head-icon img:hover {
+  filter: invert(0%) sepia(100%) saturate(23%) hue-rotate(140deg) brightness(98%) contrast(100%);
+  cursor: pointer;
+}
+.activity-cards .card-inner .card-body {
+  display: flex;
+  color: hsl(236deg, 100%, 87%);
+  margin-top: 0.5rem;
+}
+@media screen and (max-width: 460px) {
+  .activity-cards .card-inner .card-body {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 461px) {
+  .activity-cards .card-inner .card-body {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.activity-cards .card-inner .card-body .current {
+  font-size: 2rem;
+  color: #f5f5f5;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 481px) {
+  .activity-cards .card-inner .card-body .current {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .activity-cards .card-inner .card-body .current {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .activity-cards .card-inner .card-body .current {
+    font-size: 3.6rem;
+  }
+}
+.activity-cards .card-inner .card-body .previus {
+  color: hsl(236deg, 100%, 87%);
+  font-size: 13.5px;
+  font-weight: 400;
+}
+@media screen and (min-width: 769px) {
+  .activity-cards .card-inner .card-body .previus {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
