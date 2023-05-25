@@ -1,9 +1,11 @@
--This app is a time tracking dashboard app
+# Time tracking dashboard
 
--It simply show the activity data
+- It simply show the activity data
 
--It uses the data from a json file
+- It uses the data from a json file
 
--This is a react app
+- This is a react app
 
--Use scss, and vanilla js
+- Use scss, and vanilla js
+
+![the time tracking dashboard](./design/desktop-preview.jpg)
