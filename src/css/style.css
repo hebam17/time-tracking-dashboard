@@ -13,7 +13,7 @@ html {
 body {
   min-height: 100vh;
   width: 100vw;
-  background: hsl(226deg, 43%, 10%);
+  background: hsl(226, 43%, 10%);
   font-family: "Rubik", sans-serif;
   padding: 0;
   margin: 0;
@@ -62,7 +62,7 @@ main {
 .main-card {
   display: flex;
   flex-direction: column;
-  background: hsl(235deg, 46%, 20%);
+  background: hsl(235, 46%, 20%);
   margin: 0;
   border-radius: 1rem;
   max-height: 150vh;
@@ -82,7 +82,7 @@ main {
   justify-content: space-evenly;
   padding: 1.8rem 1.6rem;
   border-radius: 1rem;
-  background: hsl(246deg, 80%, 60%);
+  background: hsl(246, 80%, 60%);
   width: 100%;
   margin: 0;
 }
@@ -183,7 +183,7 @@ main {
   display: flex;
   font-size: 18px;
   font-weight: 400;
-  color: hsl(235deg, 45%, 61%);
+  color: hsl(235, 45%, 61%);
 }
 @media screen and (max-width: 768px) {
   .main-card .timeframe {
@@ -198,7 +198,7 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly !important;
+    justify-content: space-evenly;
     text-align: left;
     padding: 2rem 1.8rem;
   }
@@ -215,7 +215,7 @@ main {
 }
 @media screen and (min-width: 769px) {
   .main-card .timeframe div:not(:first-child) {
-    margin-top: 1.5rem !important;
+    margin-top: 1.5rem;
   }
 }
 @media screen and (min-width: 769px) {
@@ -249,44 +249,44 @@ main {
   }
 }
 .activity-cards .work {
-  background: hsl(15deg, 100%, 70%);
+  background: hsl(15, 100%, 70%);
   background-image: url("/assets/icon-work.svg");
   background-repeat: no-repeat;
   background-position: 88% -5%;
 }
 .activity-cards .play {
-  background: hsl(195deg, 74%, 62%);
+  background: hsl(195, 74%, 62%);
   background-image: url("/assets/icon-play.svg");
   background-repeat: no-repeat;
   background-position: 88% -5%;
 }
 .activity-cards .study {
-  background: hsl(348deg, 100%, 68%);
+  background: hsl(348, 100%, 68%);
   background-image: url("/assets/icon-study.svg");
   background-repeat: no-repeat;
   background-position: 88% -5%;
 }
 .activity-cards .exercise {
-  background: hsl(145deg, 58%, 55%);
+  background: hsl(145, 58%, 55%);
   background-image: url("/assets/icon-exercise.svg");
   background-repeat: no-repeat;
   background-position: 88% 2%;
 }
 .activity-cards .social {
-  background: hsl(264deg, 64%, 52%);
+  background: hsl(264, 64%, 52%);
   background-image: url("/assets/icon-social.svg");
   background-repeat: no-repeat;
   background-position: 90% -5%;
 }
 .activity-cards .self-care {
-  background: hsl(43deg, 84%, 65%);
+  background: hsl(43, 84%, 65%);
   background-image: url("/assets/icon-self-care.svg");
   background-repeat: no-repeat;
   background-position: 88% -5%;
 }
 .activity-cards .card-inner {
   margin: 0;
-  background: hsl(235deg, 46%, 20%);
+  background: hsl(235, 46%, 20%);
   width: 100%;
   height: 100%;
   border-radius: 1.5rem;
@@ -320,7 +320,7 @@ main {
 }
 .activity-cards .card-inner .card-body {
   display: flex;
-  color: hsl(236deg, 100%, 87%);
+  color: hsl(236, 100%, 87%);
   margin-top: 0.5rem;
 }
 @media screen and (max-width: 460px) {
@@ -361,7 +361,7 @@ main {
   }
 }
 .activity-cards .card-inner .card-body .previus {
-  color: hsl(236deg, 100%, 87%);
+  color: hsl(236, 100%, 87%);
   font-size: 13.5px;
   font-weight: 400;
 }
